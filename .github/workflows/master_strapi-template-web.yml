@@ -4,6 +4,8 @@
 name: Build and deploy Node.js app to Azure Web App - strapi-template-web
 
 on:
+  repository_dispatch:
+    types: [start-example-workflow]
   push:
     branches:
       - master
